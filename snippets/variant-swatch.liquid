@@ -1,0 +1,31 @@
+{% comment %}
+  Broadcast: Image swatches for color variants
+{% endcomment %}
+
+{% assign option_index = swatch_index %}
+{% assign value = swatch_value %}
+{% assign variant_image = null %}
+
+{% for variant in product.variants %}
+  {% if variant.options[option_index] == value %}
+    {% if variant.featured_image %}
+      {% assign variant_image = variant.featured_image %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<div class="swatch" data-value="{{ value | escape }}">
+  {% if variant_image %}
+    <img
+      src="{{ variant_image.src | img_url: '80x80' }}"
+      alt="{{ value }}"
+      class="swatch-image"
+      width="28"
+      height="28"
+      style="border-radius:4px; object-fit:cover;"
+    >
+  {% else %}
+    <span class="swatch-color" style="background: #ccc;"></span>
+  {% endif %}
+</div>
