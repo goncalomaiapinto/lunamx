@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  {%- assign brand_name = 'Luna MX' -%}
+  {%- assign brand_tagline = 'Moda feminina e masculina mexicana com elegância contemporânea.' -%}
   <meta name="theme-color" content="{{ settings.color_button }}">
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
@@ -17,12 +19,16 @@
 
   {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+  {%- else -%}
+    <link rel="shortcut icon" href="{{ 'luna-mx-favicon.svg' | asset_url }}" type="image/svg+xml" />
   {%- endif -%}
 
   {%- render 'seo-title' -%}
 
   {%- if page_description -%}
   <meta name="description" content="{{ page_description | escape }}">
+  {%- else -%}
+  <meta name="description" content="{{ brand_tagline }}">
   {%- endif -%}
 
   {%- render 'social-meta-tags' -%}

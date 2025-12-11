@@ -1,5 +1,8 @@
+{%- liquid
+  assign brand_name = brand_name | default: 'Luna MX'
+-%}
 {%- capture seo_title -%}
-  {{ page_title }}
+  {{ page_title | default: brand_name }}
   {%- if current_tags -%}
     {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
   {%- endif -%}
@@ -7,10 +10,10 @@
     &ndash; {{ 'general.meta.page' | t: page: current_page }}
   {%- endif -%}
   {%- if template == 'password' -%}
-    {{ shop.name }}
+    {{ brand_name }}
   {%- else -%}
-    {%- unless page_title contains shop.name -%}
-      &ndash; {{ shop.name }}
+    {%- unless page_title contains brand_name -%}
+      &ndash; {{ brand_name }}
     {%- endunless -%}
   {%- endif -%}
 {%- endcapture -%}
