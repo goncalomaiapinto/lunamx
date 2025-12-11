@@ -6,46 +6,46 @@
 */
 
 :root{
-  --colorAnnouncement:#000000;
-  --colorAnnouncementText:#e0e0e0;
+  --colorAnnouncement:#CE1126;
+  --colorAnnouncementText:#F9F6F1;
 
-  --colorBody:#ffffff;
-  --colorBodyAlpha05:rgba(255, 255, 255, 0.05);
-  --colorBodyDim:#f2f2f2;
-  --colorBodyLightDim:#fafafa;
-  --colorBodyMediumDim:#f5f5f5;
+  --colorBody:#F9F6F1;
+  --colorBodyAlpha05:rgba(249, 246, 241, 0.05);
+  --colorBodyDim:#eae4d9;
+  --colorBodyLightDim:#fdfaf6;
+  --colorBodyMediumDim:#f3ecdf;
 
 
-  --colorBorder:#e8e8e1;
+  --colorBorder:#D4A373;
 
-  --colorBtnPrimary:#000000;
-  --colorBtnPrimaryLight:#1a1a1a;
-  --colorBtnPrimaryDim:#000000;
-  --colorBtnPrimaryText:#ffffff;
+  --colorBtnPrimary:#006341;
+  --colorBtnPrimaryLight:#0a7a52;
+  --colorBtnPrimaryDim:#004d30;
+  --colorBtnPrimaryText:#F9F6F1;
 
-  --colorCartDot:#ff4f33;
+  --colorCartDot:#CE1126;
 
-  --colorDrawers:#ffffff;
-  --colorDrawersDim:#f2f2f2;
-  --colorDrawerBorder:#e8e8e1;
-  --colorDrawerText:#000000;
-  --colorDrawerTextDark:#000000;
-  --colorDrawerButton:#000000;
-  --colorDrawerButtonText:#ffffff;
+  --colorDrawers:#F9F6F1;
+  --colorDrawersDim:#ede6db;
+  --colorDrawerBorder:#D4A373;
+  --colorDrawerText:#0F1A12;
+  --colorDrawerTextDark:#0b140d;
+  --colorDrawerButton:#C96A38;
+  --colorDrawerButtonText:#F9F6F1;
 
-  --colorFooter:#000000;
-  --colorFooterText:#ffffff;
-  --colorFooterTextAlpha01:#ffffff;
+  --colorFooter:#006341;
+  --colorFooterText:#F9F6F1;
+  --colorFooterTextAlpha01:#F9F6F1;
 
   --colorGridOverlay:#000000;
   --colorGridOverlayOpacity:0.1;
 
-  --colorHeaderTextAlpha01:rgba(0, 0, 0, 0.1);
+  --colorHeaderTextAlpha01:rgba(249, 246, 241, 0.1);
 
   --colorHeroText:#ffffff;
 
-  --colorSmallImageBg:#ffffff;
-  --colorLargeImageBg:#0f0f0f;
+  --colorSmallImageBg:#F9F6F1;
+  --colorLargeImageBg:#F9F6F1;
 
   --colorImageOverlay:#000000;
   --colorImageOverlayOpacity:0.1;
@@ -53,25 +53,25 @@
 
   --colorLink:#000000;
 
-  --colorModalBg:rgba(230, 230, 230, 0.6);
+  --colorModalBg:rgba(0, 99, 65, 0.6);
 
-  --colorNav:#ffffff;
-  --colorNavText:#000000;
+  --colorNav:#006341;
+  --colorNavText:#F9F6F1;
 
-  --colorPrice:#168418;
+  --colorPrice:#006341;
 
-  --colorSaleTag:#1c1d1d;
-  --colorSaleTagText:#ffffff;
+  --colorSaleTag:#CE1126;
+  --colorSaleTagText:#F9F6F1;
 
-  --colorTextBody:#000000;
-  --colorTextBodyAlpha015:rgba(0, 0, 0, 0.15);
-  --colorTextBodyAlpha005:rgba(0, 0, 0, 0.05);
-  --colorTextBodyAlpha008:rgba(0, 0, 0, 0.08);
-  --colorTextSavings:#C20000;
+  --colorTextBody:#0F1A12;
+  --colorTextBodyAlpha015:rgba(15, 26, 18, 0.15);
+  --colorTextBodyAlpha005:rgba(15, 26, 18, 0.05);
+  --colorTextBodyAlpha008:rgba(15, 26, 18, 0.08);
+  --colorTextSavings:#CE1126;
 
-  --urlIcoSelect:url(//luxin-zagreb.com/cdn/shop/t/6/assets/ico-select.svg);
-  --urlIcoSelectFooter:url(//luxin-zagreb.com/cdn/shop/t/6/assets/ico-select-footer.svg);
-  --urlIcoSelectWhite:url(//luxin-zagreb.com/cdn/shop/t/6/assets/ico-select-white.svg);
+  --urlIcoSelect:url(ico-select.svg);
+  --urlIcoSelectFooter:url(ico-select-footer.svg);
+  --urlIcoSelectWhite:url(ico-select-white.svg);
 
   --grid-gutter:17px;
   --drawer-gutter:20px;
@@ -79,10 +79,10 @@
   --sizeChartMargin:25px 0;
   --sizeChartIconMargin:5px;
 
-  --newsletterReminderPadding:40px;
-  --color-body-text:#000000;
-  --color-body:#ffffff;
-  --color-bg:#ffffff;
+    --newsletterReminderPadding:40px;
+    --color-body-text:#0F1A12;
+    --color-body:#F9F6F1;
+    --color-bg:#F9F6F1;
 }
 
 @media only screen and (min-width:769px){
@@ -241,7 +241,7 @@
   transition:height 0.35s;
 }
 
-.luxin-scroll img {
+.luna-scroll img {
   height: 250px !important;
   width: auto !important;
   max-height: 250px !important;
@@ -251,12 +251,12 @@
   display: block !important;
 }
 
-.luxin-track {
+.luna-track {
   display: flex;
   gap: 25px;
 }
 
-.luxin-scroll img {
+.luna-scroll img {
   height: 250px;
   width: auto;
   object-fit: cover;
@@ -9574,10 +9574,10 @@ html[dir=rtl] .grid-product__content{
   z-index:2;
 }
 
-.luxin-submenu {
+.luna-submenu {
   width: 100%;
-  background: #f6f6f6;
-  border-bottom: 1px solid #e2e2e2;
+  background: #F9F6F1;
+  border-bottom: 1px solid #D4A373;
   padding: 12px 0;
   margin-bottom: 20px;
 
@@ -9587,11 +9587,11 @@ html[dir=rtl] .grid-product__content{
   -webkit-overflow-scrolling: touch; /* scroll suave no mobile */
 }
 
-.luxin-submenu::-webkit-scrollbar {
+.luna-submenu::-webkit-scrollbar {
   display: none; /* esconde scrollbar no mobile & webkit */
 }
 
-.luxin-submenu ul {
+.luna-submenu ul {
   display: flex;
   flex-wrap: nowrap;            /* impede quebrar para 2 linhas */
   gap: 28px;
@@ -9600,21 +9600,21 @@ html[dir=rtl] .grid-product__content{
   margin: 0;
 }
 
-.luxin-submenu ul li {
+.luna-submenu ul li {
   flex-shrink: 0;               /* impede os itens de encolher */
 }
 
-.luxin-submenu a {
+.luna-submenu a {
   font-size: 14px;
   font-weight: 600;
-  color: #333;
+  color: #006341;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.luxin-submenu a:hover {
-  color: #000;
+.luna-submenu a:hover {
+  color: #CE1126;
 }
 
 .grid-product__tag.grid-product__tag--sold-out{

@@ -1,8 +1,10 @@
 {%- liquid
-  assign og_title = page_title
+  assign brand_name = brand_name | default: 'Luna MX'
+  assign brand_tagline = brand_tagline | default: 'Moda feminina e masculina mexicana com elegância contemporânea.'
+  assign og_title = page_title | default: brand_name
   assign og_url = canonical_url
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: shop.name
+  assign og_description = page_description | default: brand_tagline
 -%}
 
 {%- if request.page_type == 'product' -%}
@@ -14,13 +16,13 @@
   {%- assign og_description = article.excerpt_or_content | strip_html -%}
 {%- elsif request.page_type == 'password' -%}
   {%- liquid
-    assign og_title = shop.name
+    assign og_title = brand_name
     assign og_url = shop.url
-    assign og_description = shop.description | default: shop.name
+    assign og_description = shop.description | default: brand_tagline
   -%}
 {%- endif -%}
 
-  <meta property="og:site_name" content="{{ shop.name }}">
+  <meta property="og:site_name" content="{{ brand_name }}">
   <meta property="og:url" content="{{ og_url }}">
   <meta property="og:title" content="{{ og_title | escape }}">
   <meta property="og:type" content="{{ og_type }}">
